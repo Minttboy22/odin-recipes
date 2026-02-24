@@ -31,6 +31,7 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background-position 0.2s ease;
+    font-size: 2.5rem;
 }
 
 h1:hover {
@@ -106,4 +107,13 @@ a.otrolink:hover {
 
 ol,ul,p,h4 {
     color: white;
+}
+
+@media (min-width: 500px) {
+    a {
+        height: 50px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
 }
