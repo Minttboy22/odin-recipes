@@ -1,0 +1,109 @@
+:root {
+    --base-color: #0e0a1d;
+}
+
+html, body {
+    background: linear-gradient(10deg, #0e0a1d , #000000 15%);
+    font-family: sans-serif;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    color: var(--base-color);
+    border-radius: 0px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background: linear-gradient(to right, red 50%, mediumspringgreen 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.2s ease;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+/*h1:hover {
+    color: red;
+    transition: 0.2s;
+}*/
+
+h3 {
+    display: flex;
+    background-color: mediumspringgreen;
+    padding: 8px 18px;
+    color: var(--base-color);
+    border-radius: 0px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    background-color: mediumspringgreen;
+    color: var(--base-color);
+    padding: 20px 20px;
+    border-radius: 0px;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-top: 20px;
+    position: relative;
+    transition: 0.2s;
+}
+
+a:hover {
+    right: -10px;
+    top: -8px;
+    rotate: -0.5deg;
+    box-shadow: 10px 10px 0px red ;
+    background-color: rgb(79, 255, 187);
+    transition: 0.1s;
+}
+
+/*a:hover {
+    width: 70%;
+    transition: 0.3s;
+    background-color: rgb(79, 255, 187);
+}*/
+
+a.otrolink {
+    height: 0;
+    width: 40px;
+    color: var(--base-color);
+    font-weight: 700;
+}
+
+a.otrolink:hover {
+    right: -10px;
+    top: -8px;
+    rotate: -0.5deg;
+    box-shadow: 10px 10px 0px red ;
+    background-color: rgb(79, 255, 187);
+    transition: 0.1s;
+}
+
+ol,ul,p,h4 {
+    color: white;
+}
